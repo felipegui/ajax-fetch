@@ -3,14 +3,11 @@
 */
 const url = 'https://alunos.b7web.com.br/api/ping';
 const params = {
-    method: 'POST',
-    body: JSON.stringify({
-        nome: 'Beltrano',
-        idade: 99
-    })
+    method: 'POST'
 };
+
 fetch(url, params)
-    .then((r) =>r.json()
-    .then((json)=> {
+    .then((r)=>r.json())
+    .then((json)=>{
         console.log(json);
-    }));
+    });
